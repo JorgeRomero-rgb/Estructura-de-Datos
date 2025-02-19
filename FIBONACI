@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int FIBO(int x);
+
+int main(){
+    int n;
+    cout<<"cual es el tope?";
+    cin>>n;
+    int Imprimir =  FIBO(n);
+return 0;
+}
+int FIBO(int x) {
+    int SS = 0; int k = 1; int p;
+    for(int i = 1; i<=x;i++)
+    {
+        p = SS + k;
+        k = SS;
+        SS = p;
+        
+    }
+    cout<<p;
+    return 0;
+}
